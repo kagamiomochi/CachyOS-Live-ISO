@@ -43,7 +43,8 @@ main() {
 ########## ISO version: $ISO_VERSION
 ########## System: $SYSTEM
 EOF
-
+    sudo cp /root/netinstall.yaml /etc/calamares/modules/netinstall.yaml
+    sudo sed -i '/https/d' /etc/calamares/modules/netinstall.conf
     sudo cp "/usr/share/calamares/settings_${mode}.conf" /etc/calamares/settings.conf
     exec pkexec-wrapper calamares -D6 >> $log
 }
