@@ -30,7 +30,7 @@ sudo pacman -S archiso mkinitcpio-archiso git squashfs-tools grub --needed
 
 ### Clone:
 ```bash
-git clone https://github.com/cachyos/cachyos-live-iso.git cachyos-archiso
+git clone https://github.com/kagamiomochi/cachyos-live-iso.git cachyos-archiso
 cd cachyos-archiso
 ```
 
