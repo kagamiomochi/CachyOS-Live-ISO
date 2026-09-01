@@ -1,8 +1,36 @@
+# 26.08
+**Features:**
+
+* **Installer:**
+  * CachyOS Hyprland Noctalia desktop option now uses `noctalia-greeter` instead of SDDM
+  * Cinnamon switched from `lightdm-gtk-greeter` to `lightdm-slick-greeter`
+  * Added `gvfs-dnssd` to GNOME and cosmic-monitor to COSMIC
+* **CLI Installer:** Fixes and refactors, with experimental Server Edition support installation profiles
+* **CachyOS-Welcome:** Reworked DNS handling so the speed-test based server ranking now works correctly
+* **chwd:**
+  * Improved handheld detection with board_name pattern matching
+  * Rewrote the `kernel-manager` backend in Rust, and integrated it into `chwd-kernel`
+  * Added Bulgarian localization
+* **Cachy-Update:**
+  * Rebased onto Arch-Update v4.x with the systray applet rewritten in Rust
+* **Desktops:** Added `mango` and `niri` Noctalia variants, Noctalia v5 support for the Hyprland dotfiles, and updated the Nord KDE theme for Plasma 6.7
+* **cachyos-settings:** Added a nice-value tuning to `limits.d`
+* **cachyos-rate-mirrors:** Now uses the CachyOS mirrorlist API for ranking mirrors
+* **Mirrors:** New mirror in Hungary (Tier 2)
+* **Wiki**: Gaming with CachyOS Guide has been significantly changed, old launch options no longer needed with the latest proton-cachyos-slr have been removed, but can still be found [here](https://github.com/CachyOS/proton-cachyos#proton-cachyos-config-options). And just generally updating the page and the wiki.
+
+**Fixes:**
+
+* **chwd:**
+  * Gracefully handle a missing board_name DMI file
+  * Correctly handle VM environments
+  * Correctly quote pacman arguments
+
 # 26.07
 **Features:**
 
 
-* **Packages:**: 
+* **Packages:**:
   - Python now used extended PGO to improve the performance
   - Fixed a regression found in Phronix Benchmarks, when OpenBLAS was used on high core count CPUs.
 * **Installer:**
@@ -36,7 +64,6 @@
   - Removed unnecessary fprintd service activation.
   - Fixed the Mesa removal guard.
 
-
 # 26.04
 **Features:**
 
@@ -56,7 +83,7 @@
   * Added support for intel-lpmd for supported device and created an own fork for better configs
   * Chassis Type Detection in profiles
   * Added Xbox Rog Ally pattern to chwd profile
-* **cachyos-settings:** Switched to NVMe Scheduler from none to kyber 
+* **cachyos-settings:** Switched to NVMe Scheduler from none to kyber
 
 **Fixes:**
 
@@ -64,7 +91,7 @@
   * Print partition method into debug log
   * Remove old microcode if reusing boot partition
 * **CachyOS-Welcome:**
-  * 
+  *
 
 * **chwd:**
   * Kernel search is now more accurate in nvidia profiles
