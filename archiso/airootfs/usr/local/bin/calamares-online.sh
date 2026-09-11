@@ -44,7 +44,7 @@ main() {
 ########## System: $SYSTEM
 EOF
     sudo cp netinstall.yaml /etc/calamares/modules/netinstall.yaml
-    sudo cp netinstall.yaml /etc/calamares/modules/netinstall.conf
+    sudo cp netinstall.conf /etc/calamares/modules/netinstall.conf
     sudo cp "/usr/share/calamares/settings_${mode}.conf" /etc/calamares/settings.conf
     exec pkexec-wrapper calamares -D6 >> $log
 }
