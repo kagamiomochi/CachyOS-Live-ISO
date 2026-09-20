@@ -15,6 +15,7 @@
      - linux-cachyos-lts
      - linux-cachyos-lts-headers
      - chwd
+     - git
 - name: "CachyOS Packages"
   description: "needed CachyOS packages"
   hidden: false
@@ -140,20 +141,42 @@
           - cpupower
           - power-profiles-daemon
           - upower
-      - name: "Some applications selection"
-        description: "General tools and applications"
-        selected: true
-        packages:
-          - btop
-          - git
-          - nano-syntax-highlighting
-          - fastfetch
-          - python-defusedxml
-          - python-packaging
-          - rsync
-          - wget
-          - nano
-          - openssh
+- name: "Some applications selection"
+  description: "General tools and applications"
+  selected: true
+  packages:
+    - btop
+    - nano
+    - nano-syntax-highlighting
+    - fastfetch
+    - python-defusedxml
+    - python-packaging
+    - rsync
+    - wget
+    - openssh
+    - blender
+    - vesktop-bin
+    - discord
+    - docker
+    - docker-compose
+    - gamescope
+    - jellyfin-server
+    - jellyfin-web
+    - obs-studio
+    - v4l2loopback-dkms
+    - prismlauncher
+    - proton-cachyos-slr
+    - steam
+    - sunshine
+    - yt-dlp
+    - rclone
+    - inkscape
+    - mission-center
+    - claude-desktop
+    - chatgpt-desktop-bin
+    - pear-desktop
+    - git-credential-oauth
+    - zen-browser-bin
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
   hidden: false
